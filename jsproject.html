@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>age-calculator</title>
+<link rel="stylesheet" href="jsproject.css">
+
+</head>
+<body>
+    <div class="all">
+    <div class="w">
+ <div class="upperhalf">
+    <p>day</p>
+    <input id="yourday" type="number" >
+    <p id="daytext"></p>
+</div>
+<div class="upperhalf">
+    <p>month</p>
+    <input id="yourmonth" type="number" >
+    <p id="monthtext"></p>
+</div>
+<div class="upperhalf">
+    <p>year</p>
+    <input id="youryear" type="number" >
+    <p id="yeartext"></p>
+</div>
+    </div>
+    <br>
+    <button id="button"><img src="file:///C:/Users/User/AppData/Local/Temp/Tempe79b481a-b62f-484a-b255-1c83312c48ff_age-calculator-app-main.zip/age-calculator-app-main/assets/images/icon-arrow.svg" alt="">
+    </button>
+    <hr>
+    <span id="yearanswer">--</span><span> years</span>
+    <br>
+    <span id="monthanswer">--</span><span> months</span>
+    <br>
+    <span id="dayanswer">--</span><span> days</span>
+</div>
+<script>
+document.getElementById("button").onclick=function(){
+var x = document.getElementById("yourday").value
+var y=document.getElementById("yourmonth").value
+var z=document.getElementById("youryear").value
+var year =(new Date().getFullYear())
+var month =(new Date().getMonth())+1
+var day=(new Date().getDate())
+document.getElementById("yearanswer").innerHTML=Math.abs(year-z)
+document.getElementById("monthanswer").innerHTML=Math.abs(month-y)
+document.getElementById("dayanswer").innerHTML=Math.abs(day- x)
+if(document.getElementById("yourday").value==""){
+document.getElementById("daytext").innerHTML="this feild is required"
+document.getElementById("yearanswer").innerHTML="--"
+document.getElementById("monthanswer").innerHTML="--"
+document.getElementById("dayanswer").innerHTML="--"
+}
+if(document.getElementById("yourmonth").value==""){
+document.getElementById("monthtext").innerHTML="this feild is required"
+document.getElementById("daytext").innerHTML="this feild is required"
+document.getElementById("yearanswer").innerHTML="--"
+document.getElementById("monthanswer").innerHTML="--"
+document.getElementById("dayanswer").innerHTML="--"
+}
+if(document.getElementById("youryear").value==""){
+document.getElementById("yeartext").innerHTML="this feild is required"
+document.getElementById("daytext").innerHTML="this feild is required"
+document.getElementById("yearanswer").innerHTML="--"
+document.getElementById("monthanswer").innerHTML="--"
+document.getElementById("dayanswer").innerHTML="--"
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,58 @@
+html {background-color:  hsl(0, 0%, 94%)}
+.all{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px 20px 150px 20px;
+    margin: 100px 500px 100px 500px;
+}
+.upperhalf{
+color: gray;
+padding: 30px;
+}
+.w{
+    display:inline-flex;
+}
+input{
+height:50px;
+width: 100px;
+border-radius: 10px;
+border-color:hsl(0, 0%, 86%);
+color: gray;
+}
+img{
+background-color: blueviolet;
+border-radius: 50%;}
+span{
+font-size: 100px;
+}
+#yearanswer{
+    color: blueviolet;
+    }
+#monthanswer{
+    color: blueviolet;
+}    
+#dayanswer{
+    color: blueviolet;
+}
+button{
+border-radius: 50%;
+height: 50px;
+width: 50px;
+padding: 0%;
+margin-left: 200px;
+border-color: blueviolet;
+}
+img:hover{background-color: black;}
+#daytext{
+font-size: 10px;
+color: red;
+}
+#monthtext{
+font-size: 10px;
+color: red;
+}
+#yeartext{
+font-size: 10px;
+color: red;
+}

@@ -21,6 +21,8 @@ border-color:hsl(0, 0%, 86%);
 color: gray;
 }
 img{
+height: 50px;
+width: 50px;
 background-color: blueviolet;
 border-radius: 50%;}
 span{
@@ -37,8 +39,8 @@ font-size: 100px;
 }
 button{
 border-radius: 50%;
-height: 50px;
-width: 50px;
+height: 53px;
+width: 53px;
 padding: 0%;
 margin-left: 200px;
 border-color: blueviolet;

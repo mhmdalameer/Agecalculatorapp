@@ -44,90 +44,25 @@ var day=(new Date().getDate())
 document.getElementById("yearanswer").innerHTML=Math.abs(year-z)
 document.getElementById("monthanswer").innerHTML=Math.abs(month-y)
 document.getElementById("dayanswer").innerHTML=Math.abs(day- x)
-if(document.getElementById("yourday").value==""){
-document.getElementById("daytext").innerHTML="this feild is required"
+if(x==null || x==""||x>31 ||x<0){
+document.getElementById("daytext").innerHTML="this feild is required,try again with valid numbers"
 document.getElementById("yearanswer").innerHTML="--"
 document.getElementById("monthanswer").innerHTML="--"
 document.getElementById("dayanswer").innerHTML="--"
 }
-if(document.getElementById("yourmonth").value==""){
-document.getElementById("monthtext").innerHTML="this feild is required"
-document.getElementById("daytext").innerHTML="this feild is required"
+if(y==null || y==""||y>13 || y<0){
+document.getElementById("monthtext").innerHTML="this feild is required,try again with valid numbers"
 document.getElementById("yearanswer").innerHTML="--"
 document.getElementById("monthanswer").innerHTML="--"
 document.getElementById("dayanswer").innerHTML="--"
 }
-if(document.getElementById("youryear").value==""){
-document.getElementById("yeartext").innerHTML="this feild is required"
-document.getElementById("daytext").innerHTML="this feild is required"
+if( z==null || z==""||z>(new Date().getFullYear())||z<1950){
+document.getElementById("yeartext").innerHTML="this feild is required,try again with valid numbers"
 document.getElementById("yearanswer").innerHTML="--"
 document.getElementById("monthanswer").innerHTML="--"
 document.getElementById("dayanswer").innerHTML="--"
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
